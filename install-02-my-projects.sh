@@ -7,8 +7,8 @@ curl --user iosifv -L -O https://bitbucket.org/iosifvigh/silence/get/master.zip
 # Unzip the files
 unzip master.zip
 
-# Execute scripts
-cd iosifvigh-silence-c6c038e8a63c/
+# Execute scripts - !!! WARNING - this hash changes with every commit !!!
+cd iosifvigh-silence-d6f9a0f089a7/
 
 echo "Enter Silence password (for .ssh)"
 cd ssh/
