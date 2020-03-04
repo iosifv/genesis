@@ -30,14 +30,17 @@ sudo apt install mysql-server mysqltuner -y
 # sudo apt install php -y
 sudo apt install php7.3 -y
 # sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php-zip -y
-sudo apt install php7.3-xml php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-simplexml  -y
+sudo apt install php7.3-xml php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-simplexml php-curl -y
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
-sudo composer global require phpunit/phpunit ^8
+sudo apt install phpunit
 
 # Node.JS
 sudo apt install npm -y
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-source ~/.profile    # need to resource after installing nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 nvm install v6.17.1  # LTS
 nvm install v8.16.1  # LTS
 nvm install v10.16.3 # LTS
@@ -70,6 +73,14 @@ sudo apt install cloc -y      # Counts lines of code
 sudo pip3 install thefuck -y  # In case you fuck it up :)
 sudo pip3 install pygments -y # Pygmentyze your output
 sudo apt install ranger -y    # Alternatives to the midnight commander. 
+
+# Cool new terminal
+sudo apt install kitty -y
+cd $HOME
+git clone https://github.com/adi1090x/kitty-cat
+cd kitty-cat
+./install
+cd $HOME
 
 # Controll your cloud with rclone
 curl https://rclone.org/install.sh | sudo bash
