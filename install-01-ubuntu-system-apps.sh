@@ -45,6 +45,9 @@ nvm install v6.17.1  # LTS
 nvm install v8.16.1  # LTS
 nvm install v10.16.3 # LTS
 nvm install v12.11.0 # not LTS
+nvm alias default 10
+nvm list
+
 npm i -g grunt grunt-cli gulp webpack documentation
 npm i -g express pm2 nodemon serverless
 
