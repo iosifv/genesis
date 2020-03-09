@@ -105,6 +105,7 @@ sudo apt install cowsay fortune lolcat -y
 sudo apt install screenfetch -y # Shows system information with nice graphics
 sudo apt install inxi -y        # Shows system information condensed in 2 lines
 sudo apt install ansiweather -y # Shows brief information about the weather
+sudo npm install bitcoin-chart-cli -gy # Cryptocurrency charts
 
 # Status of the tube
 sudo wget https://raw.githubusercontent.com/smallwat3r/tubestatus/master/src/tubestatus -P /usr/local/bin && sudo chmod 755 /usr/local/bin/tubestatus
