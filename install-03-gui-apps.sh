@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Terminal spice
+sudo add-apt-repository ppa:mmstick76/alacritty
+sudo apt install alacritty
+
 # Glorious Snaps
 sudo snap install docker postman
 sudo snap install aws-cli --classic

@@ -14,7 +14,6 @@ sudo apt install git -y
 git config --global user.email "dev@iosifv.com"
 git config --global user.name "Iosif V."
 git config --global core.autocrlf false
-sudo apt install tig -y      # A console UI for GIT
 
 # Nginx
 sudo apt install nginx -y
@@ -75,6 +74,7 @@ sudo apt install cloc -y      # Counts lines of code
 sudo pip3 install thefuck -y  # In case you fuck it up :)
 sudo pip3 install pygments -y # Pygmentyze your output
 sudo apt install ranger -y    # Alternatives to the midnight commander. 
+sudo apt install tig -y       # A console UI for GIT
 
 # Cool new terminal
 sudo apt install kitty -y
