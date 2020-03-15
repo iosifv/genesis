@@ -27,7 +27,7 @@ sudo apt install php -y
 # sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php7.2-simplexml php7.2-curl php7.2-zip -y
 sudo apt install php-xml php-mbstring php-mysql php-sqlite3 php-simplexml php-curl php-zip -y
 
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer -y
 sudo chown -R $USER ~/.composer/
 
 sudo apt install phpunit

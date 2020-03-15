@@ -15,4 +15,6 @@ wget https://raw.githubusercontent.com/iosifv/genesis/master/install-02-my-proje
 ```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/install-01-ubuntu-system-apps.sh)"
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/install-02-my-projects.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/install-03-gui-apps.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/test.sh)"
 ```
