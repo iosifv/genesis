@@ -76,14 +76,6 @@ sudo pip3 install pygments -y # Pygmentyze your output
 sudo apt install ranger -y    # Alternatives to the midnight commander. 
 sudo apt install tig -y       # A console UI for GIT
 
-# Cool new terminal
-sudo apt install kitty -y
-cd $HOME
-git clone https://github.com/adi1090x/kitty-cat
-cd kitty-cat
-./install
-cd $HOME
-
 # Controll your cloud with rclone
 curl https://rclone.org/install.sh | sudo bash
 

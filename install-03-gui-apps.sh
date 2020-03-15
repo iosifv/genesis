@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
-# Terminal spice
+# Cool new terminal
+sudo apt install kitty -y
+cd $HOME
+git clone https://github.com/adi1090x/kitty-cat
+cd kitty-cat
+./install
+cd $HOME
+
+# Terminal Overload
 sudo add-apt-repository ppa:mmstick76/alacritty
 sudo apt install alacritty
 

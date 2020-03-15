@@ -5,7 +5,7 @@ C_RESET=$(tput sgr0)
 
 echo "${C_YELLOW}Check Git...${C_RESET}"
 git --version
-git config --global --list
+# git config --global --list
 
 echo "${C_YELLOW}Check Nginx...${C_RESET}"
 nginx --version
