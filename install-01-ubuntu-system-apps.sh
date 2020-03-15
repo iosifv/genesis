@@ -1,8 +1,4 @@
-  
 #!/usr/bin/env bash
-
-# Todo:
-# Tester function
 
 # System updates
 sudo apt update -y
@@ -27,11 +23,14 @@ sudo apt install nginx -y
 sudo apt install mysql-server mysqltuner -y
 
 # PHP
-# sudo apt install php -y
-sudo apt install php7.3 -y
-# sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php-zip -y
-sudo apt install php7.3-xml php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-simplexml php-curl -y
+sudo apt install php -y
+# sudo apt install php7.3 -y
+# sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php7.2-simplexml php7.2-curl php7.2-zip -y
+sudo apt install php-xml php-mbstring php-mysql php-sqlite3 php-simplexml php-curl php-zip -y
+
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+sudo chown -R $USER ~/.composer/
+
 sudo apt install phpunit
 
 # Node.JS
@@ -109,21 +108,10 @@ sudo apt install screenfetch -y # Shows system information with nice graphics
 sudo apt install inxi -y        # Shows system information condensed in 2 lines
 sudo apt install ansiweather -y # Shows brief information about the weather
 sudo npm install bitcoin-chart-cli -gy # Cryptocurrency charts
+sudo apt install cmatrix -y     # Find out how deep the rabbit hole goes
 
 # Status of the tube
 sudo wget https://raw.githubusercontent.com/smallwat3r/tubestatus/master/src/tubestatus -P /usr/local/bin && sudo chmod 755 /usr/local/bin/tubestatus
-
-# Glorious Snaps
-sudo snap install docker postman
-sudo snap install aws-cli --classic
-sudo snap install code    --classic
-sudo snap install cointop --stable
-
-# Snaps not needed in case of Virtual machine
-sudo snap install spotify caprine snap-store vlc gitkraken chromium
-sudo snap install slack   --classic
-sudo snap install phpstorm --classic
-sudo snap install webstorm --classic
 
 
 ## Things to do at the end

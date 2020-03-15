@@ -65,6 +65,8 @@ git clone git@bitbucket.org:iosifvigh/iosifv.git
 git clone git@bitbucket.org:iosifvigh/casa4.co.uk.git
 git clone git@bitbucket.org:iosifvigh/ragus.git
 git clone git@bitbucket.org:iosifvigh/ragus-client.git
+git clone git@bitbucket.org:iosifvigh/ragus-laravel-client.git
+git clone git@bitbucket.org:iosifvigh/ragus-mvp.git
 git clone git@bitbucket.org:iosifvigh/technical-interviews.git
 git clone git@bitbucket.org:iosifvigh/work-folders.git
 git clone git@bitbucket.org:iosifvigh/udemy.git
