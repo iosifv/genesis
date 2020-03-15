@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Cool new terminal
-sudo apt install kitty -y
+sudo apt install kitty -y -qq
 cd $HOME
 git clone https://github.com/adi1090x/kitty-cat
 cd kitty-cat
@@ -10,7 +10,7 @@ cd $HOME
 
 # Terminal Overload
 sudo add-apt-repository ppa:mmstick76/alacritty
-sudo apt install alacritty
+sudo apt install alacritty -y -qq
 
 # Glorious Snaps
 sudo snap install docker postman
