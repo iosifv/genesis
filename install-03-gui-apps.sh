@@ -23,3 +23,4 @@ sudo snap install spotify caprine snap-store vlc gitkraken chromium
 sudo snap install slack   --classic
 sudo snap install phpstorm --classic
 sudo snap install webstorm --classic
+sudo snap install authy --beta
