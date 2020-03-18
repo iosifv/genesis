@@ -18,18 +18,17 @@ print_section() {
 
 print_section "Check Git"
 git --version
-# git config --global --list
 
-# echo "${C_YELLOW}Check Nginx...${C_RESET}"
-# nginx --version
+print_section "Check Nginx"
+nginx --version
 
-# echo "${C_YELLOW}Check MySQL...${C_RESET}"
-# mysql --version
+print_section "Check MySQL"
+mysql --version
 
-# echo "${C_YELLOW}Check PHP version...${C_RESET}"
-# php -v
-# composer --version
+print_section "Check PHP version"
+php -v
+composer --version
 
-# echo "${C_YELLOW}Check NVM installs...${C_RESET}"
-# . ~/.nvm/nvm.sh
-# nvm list
+print_section "Check NVM installs"
+. ~/.nvm/nvm.sh
+nvm list
