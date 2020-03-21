@@ -24,9 +24,9 @@ sudo apt install mysql-server -y
 
 # Create my basic users
 print_section "Create basic users"
-sudo mysql -u root -e "CREATE USER 'iosif'@'localhost' IDENTIFIED BY ''; GRANT ALL PRIVILEGES ON * . * TO 'iosif'@'localhost'; FLUSH PRIVILEGES;"
-sudo mysql -u root -e "CREATE USER 'laravel'@'localhost' IDENTIFIED BY ''; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; FLUSH PRIVILEGES;"
-sudo mysql -u root -e "CREATE USER 'node'@'localhost' IDENTIFIED BY ''; GRANT ALL PRIVILEGES ON * . * TO 'node'@'localhost'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "CREATE USER 'iosif'@'localhost' IDENTIFIED WITH mysql_native_password ''; GRANT ALL PRIVILEGES ON * . * TO 'iosif'@'localhost'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "CREATE USER 'laravel'@'localhost' IDENTIFIED WITH mysql_native_password ''; GRANT ALL PRIVILEGES ON * . * TO 'laravel'@'localhost'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "CREATE USER 'node'@'localhost' IDENTIFIED WITH mysql_native_password ''; GRANT ALL PRIVILEGES ON * . * TO 'node'@'localhost'; FLUSH PRIVILEGES;"
 sudo mysql -u root -e "SELECT host, user, authentication_string FROM mysql.user;"
 
 # Install other Stuff
