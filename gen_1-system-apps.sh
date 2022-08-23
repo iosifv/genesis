@@ -70,15 +70,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 print_status "Installing LTS Node v6, v8, v10, v12"
-nvm install v6.17.1   >> /dev/null # LTS
-nvm install v8.16.1   >> /dev/null # LTS
-nvm install v10.16.3  >> /dev/null # LTS
-nvm install v12.13.1  >> /dev/null # LTS
-nvm alias default 10
+nvm install v14.20.0  >> /dev/null # LTS
+nvm install v16.17.0  >> /dev/null # LTS
+nvm install v18.7.0  >> /dev/null # LTS
+nvm alias default 16
 nvm list
 
 print_status "npm i -g"
-npm i -g grunt grunt-cli gulp webpack documentation
+npm i -g webpack documentation
 npm i -g express pm2 nodemon serverless
 
 # Python
