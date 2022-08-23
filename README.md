@@ -21,8 +21,16 @@ Like *God* did, with the *Earth*, but this is *Ubuntu*, same thing
 #### Do you feel lucky, punk?
 ```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/gen_1-system-apps.sh)"
+```
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/gen_2-mysql.sh)"
+```
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/gen_3-gui-apps.sh)"
+```
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/gen_4-my-projects.sh)"
+```
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/iosifv/genesis/master/gen_test.sh)"
 ```
