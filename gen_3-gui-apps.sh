@@ -15,6 +15,7 @@ sudo apt install alacritty -y -qq
 # Dev
 sudo snap install docker
 sudo snap install postman
+sudo snap install insomnia
 sudo snap install gitkraken
 sudo snap install code     --classic
 sudo snap install phpstorm --classic
